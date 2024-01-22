@@ -61,5 +61,12 @@ public class CrabWorld extends World
         removeObject(worm6);
         removeObject(lobster);
         removeObject(lobster2);
+        RightButton rightButton = new RightButton();
+        addObject(rightButton,467,605);
+        LeftButton leftButton = new LeftButton();
+        addObject(leftButton,274,603);
+        leftButton.setLocation(155,629);
+        rightButton.setLocation(556,627);
+        leftButton.setLocation(405,634);
     }
 }
