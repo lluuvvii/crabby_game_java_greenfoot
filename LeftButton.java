@@ -12,15 +12,9 @@ public class LeftButton extends Actor
      * Act - do whatever the LeftButton wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private boolean isPressed = false;
     public void act()
     {
         if (Greenfoot.mousePressed(this))
-        {
-            isPressed = !isPressed;
-        }
-
-        if (isPressed)
         {
             // Mengambil dunia (world) dan mencari objek Crab
             World world = getWorld();
