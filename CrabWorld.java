@@ -9,7 +9,7 @@ public class CrabWorld extends World
     Counter counter = new Counter();
     public CrabWorld()
     {    
-        super(700, 700, 1); 
+        super(700, 700, 1);
         prepare();
         addObject(counter, 90, 30);
     }

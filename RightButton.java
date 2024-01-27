@@ -1,4 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.util.List;
 
 /**
  * Write a description of class RightButton here.
@@ -14,14 +15,16 @@ public class RightButton extends Actor
      */
     public void act()
     {
-        if (Greenfoot.mousePressed(this))
+        if (Greenfoot.mouseDragged(this))
         {
-            // Mengambil dunia (world) dan mencari objek Crab
             World world = getWorld();
-            Crab crab = (Crab) world.getObjects(Crab.class).get(0);
+            List<Crab> crabs = world.getObjects(Crab.class);
 
-            // Memanggil metode turnRight pada objek Crab
-            crab.turnRight();
+            // Periksa apakah daftar tidak kosong sebelum mengakses elemennya
+            if (!crabs.isEmpty()) {
+                Crab crab = crabs.get(0);
+                crab.turnRight();
+            }
         }
     }
 }

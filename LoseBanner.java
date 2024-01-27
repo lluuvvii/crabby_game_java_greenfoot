@@ -28,7 +28,7 @@ public class LoseBanner extends Actor
         
         world.removeObject(counter);
 
-        // get value get counter.score value and saved it to each index of array
+        // menambahkan nilai dalam array berdasarkan ukuran skor
         for (int i = 0; i < counter.score; i++) {
             scoreArray[i] = i + 1;
         }

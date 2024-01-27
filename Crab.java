@@ -35,7 +35,7 @@ public class Crab extends Actor
     {
         Actor worm = getOneObjectAtOffset(0, 0, Worm.class);
         World world = getWorld();
-        CrabWorld crabWorld = (CrabWorld)world; // casting the parent class to subclass based on receive object
+        CrabWorld crabWorld = (CrabWorld)world; // casting untuk mendapatkan akses fungsi yang ada dalam crabworld
         Counter counter = crabWorld.counter;
         Lobster lobster = new Lobster();
         if (worm != null)
